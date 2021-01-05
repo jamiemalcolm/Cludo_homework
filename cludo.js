@@ -159,41 +159,66 @@
 
 // Episode VIII - The Last Jedi... not really tho..
 
+// const scenario = {
+//     murderer: 'Mrs. Peacock',
+//     room: 'Conservatory',
+//     weapon: 'Lead Pipe'
+//   };
+//   // when called below, the function first changes conservatory to dining room 
+//   // then it runs plot twist which changes the murderer to colonel mustard
+//   // which inturn runs unexpected outcome which changes the weapon to candle stick 
+//   //
+//   const changeScenario = function() {
+//     scenario.murderer = 'Mrs. Peacock';
+//     scenario.room = 'Dining Room';
+  
+//     const plotTwist = function(room) {
+//       if (scenario.room === room) {
+//         scenario.murderer = 'Colonel Mustard';
+//       }
+  
+//       const unexpectedOutcome = function(murderer) {
+//         if (scenario.murderer === murderer) {
+//           scenario.weapon = 'Candle Stick';
+//         }
+//       }
+  
+//       unexpectedOutcome('Colonel Mustard');
+//     }
+  
+//     plotTwist('Dining Room');
+//   }
+  
+//   const declareWeapon = function() {
+//     return `The weapon is ${scenario.weapon}.`
+//   }
+  
+//   changeScenario();
+//   const verdict = declareWeapon();
+//   // i think the weapon should be candle stick
+//   console.log(verdict);
+
+// Episode IX - The Rise Of Skywalker -- i mean she just said her last name was skywalker by that logic im one too 
+
+// let murderer = 'Professor Plum';
+// // the murderer decleration in this if block is only available here
+// if (murderer === 'Professor Plum') {
+//   let murderer = 'Mrs. Peacock';
+// }
+
+// const declareMurderer = function() {
+//   return `The murderer is ${murderer}.`;
+// }
+// // murderer should be professor plum 
+// const verdict = declareMurderer();
+// console.log(verdict);
+
+// Episode X - Arise Jamie Skywalker
+
+const guests = ["Colonel Mustard","Mrs. Peacock","Professor Plum","Miss Scarlet","Mr. Green"]
+const weapons = [""]
 const scenario = {
-    murderer: 'Mrs. Peacock',
-    room: 'Conservatory',
-    weapon: 'Lead Pipe'
-  };
-  // when called below, the function first changes conservatory to dining room 
-  // then it runs plot twist which changes the murderer to colonel mustard
-  // which inturn runs unexpected outcome which changes the weapon to candle stick 
-  //
-  const changeScenario = function() {
-    scenario.murderer = 'Mrs. Peacock';
-    scenario.room = 'Dining Room';
-  
-    const plotTwist = function(room) {
-      if (scenario.room === room) {
-        scenario.murderer = 'Colonel Mustard';
-      }
-  
-      const unexpectedOutcome = function(murderer) {
-        if (scenario.murderer === murderer) {
-          scenario.weapon = 'Candle Stick';
-        }
-      }
-  
-      unexpectedOutcome('Colonel Mustard');
-    }
-  
-    plotTwist('Dining Room');
-  }
-  
-  const declareWeapon = function() {
-    return `The weapon is ${scenario.weapon}.`
-  }
-  
-  changeScenario();
-  const verdict = declareWeapon();
-  // i think the weapon should be candle stick
-  console.log(verdict);
+    murderer: "",
+    room: "",
+    weapon: "",
+}
