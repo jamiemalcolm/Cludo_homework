@@ -215,10 +215,43 @@
 
 // Episode X - Arise Jamie Skywalker
 
-const guests = ["Colonel Mustard","Mrs. Peacock","Professor Plum","Miss Scarlet","Mr. Green"]
-const weapons = [""]
+const guests = ["Colonel Mustard","Mrs. Peacock","Professor Plum","Miss Scarlet","Mr. Green"];
+const weapons = ["Lead Pipe", "Candle Stick","Revolver", "Poison"];
+const rooms = ["Conservatory", "Ballroom", "Library", "Kitchen"];
+
 const scenario = {
     murderer: "",
     room: "",
     weapon: "",
+};
+
+
+// function to log a random item in an array to the console 
+const declareMurderer = function(people) {
+    var randomPerson = people[Math.floor(Math.random() * people.length)];
+    scenario.murderer = randomPerson;
+    console.log(scenario.murderer);
 }
+
+// declareMurderer(guests);
+
+const declareWeapon = function(bluntObjects) {
+    var randomWeapon = bluntObjects[Math.floor(Math.random() * bluntObjects.length)];
+    scenario.weapon = randomWeapon;
+    console.log(scenario.weapon);
+}
+// declareWeapon(weapons);
+
+const declareMurderLocation = function(places) {
+    var randomRoom = places[Math.floor(Math.random() * places.length)];
+    scenario.room = randomRoom;
+    console.log(scenario.room);
+}
+
+const playCludo = function(people, weapons, rooms, game){
+    declareMurderer(people);
+    declareWeapon(weapons);
+    declareMurderLocation(rooms);
+    console.log(`The murderer was ${game.murderer}, they did it with the ${game.weapon}, in the ${game.room}`)
+}
+playCludo(guests, weapons, rooms, scenario);
